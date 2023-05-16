@@ -7,8 +7,8 @@ masterPlay.addEventListener('click', ()=> {
     if (music.paused || music.currentTime <=0) {
         music.play();
         masterPlay.classList.remove('bi-play-fill');
-        masterPlay.classList.add('bi-pause-fill');~
-        wave.classList.add('active2')
+        masterPlay.classList.add('bi-pause-fill');
+        wave.classList.add('active2');
     } else {
         music.pause();
         masterPlay.classList.add('bi-play-fill');
@@ -21,6 +21,12 @@ const makeAllPlays = () => {
     Array.from(document.getElementsByClassName('playListPlay')).forEach((element) => {
         element.classList.add('bi-play-circle-fill');
         element.classList.remove('bi-pause-circle-fill');
+    })
+}
+
+const makeAllBackgrounds = () => {
+    Array.from(document.getElementsByClassName('songItem')).forEach((element) => {
+        element.style.background = "rgb(105, 105, 170, 0)";
     })
 }
 
@@ -45,6 +51,19 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((element) =>
             let {songName} = ele;
             title.innerHTML = songName;
         })
+
+        masterPlay.classList.remove('bi-play-fill');
+        masterPlay.classList.add('bi-pause-fill');
+        wave.classList.add('active2');
+
+        music.addEventListener('ended', () => {
+            masterPlay.classList.add('bi-play-fill');
+            masterPlay.classList.remove('bi-pause-fill');
+            wave.classList.remove('active2');
+        })
+
+        makeAllBackgrounds();
+        Array.from(document.getElementsByClassName('songItem'))[`${index-1}`].style.background = "rgb(105, 105, 170, .1)";
     })
 })
 
@@ -121,6 +140,13 @@ const songs = [
         <div class="subtitle">Teqkoi
         </div>`,
         poster: "public/img/playlist/11.jpg"
+    },
+    {
+        id:'12',
+        songName:`Midnight Sky <br>
+        <div class="subtitle">Milie Sirus
+        </div>`,
+        poster: "public/img/covers/3.jpg"
     }
 ]
 
