@@ -294,7 +294,83 @@ const songs = [
         <div class="subtitle">Milie Sirus
         </div>`,
         poster: "public/img/playlist/12.jpg"
-    }
+    },
+    {
+        id:'13',
+        songName:`Joane <br>
+        <div class="subtitle">Laddy Gaga
+        </div>`,
+        poster: "public/img/playlist/13.jpg"
+    },
+    {
+        id:'14',
+        songName:`Get Luck <br>
+        <div class="subtitle">Daft Punk
+        </div>`,
+        poster: "public/img/playlist/14.jpg"
+    },
+    {
+        id:'15',
+        songName:`Happier <br>
+        <div class="subtitle">Mashmallow
+        </div>`,
+        poster: "public/img/playlist/15.jpg"
+    },
+    {
+        id:'16',
+        songName:`In name of love <br>
+        <div class="subtitle">Martin Garrix
+        </div>`,
+        poster: "public/img/playlist/16.jpg"
+    },
+    {
+        id:'17',
+        songName:`Rise Up <br>
+        <div class="subtitle">Andra Day
+        </div>`,
+        poster: "public/img/playlist/17.jpg"
+    },
+    {
+        id:'18',
+        songName:`Lovely <br>
+        <div class="subtitle">Billie Eilish
+        </div>`,
+        poster: "public/img/playlist/18.jpg"
+    },
+    {
+        id:'19',
+        songName:`Unstopable <br>
+        <div class="subtitle">Sia
+        </div>`,
+        poster: "public/img/playlist/19.jpg"
+    },
+    {
+        id:'20',
+        songName:`One Way Love <br>
+        <div class="subtitle">Hylolyn
+        </div>`,
+        poster: "public/img/playlist/20.jpg"
+    },
+    {
+        id:'21',
+        songName:`Le monarque des Indes <br>
+        <div class="subtitle">Pierre Lapointe
+        </div>`,
+        poster: "public/img/playlist/21.jpg"
+    },
+    {
+        id:'22',
+        songName:`Song Machine <br>
+        <div class="subtitle">Gorillaz
+        </div>`,
+        poster: "public/img/playlist/22.jpg"
+    },
+    {
+        id:'23',
+        songName:`On My Way <br>
+        <div class="subtitle">Alan Walker</div>`,
+        poster: "public/img/playlist/23.jpg"
+    },
 ]
 
 Array.from(document.getElementsByClassName('songItem')).forEach((element, i)=> {
