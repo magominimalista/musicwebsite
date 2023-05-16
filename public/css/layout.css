@@ -1,0 +1,31 @@
+header {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid var(--white); */
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+header .menu_side, .song_side {
+    position: relative;
+    width: 25%;
+    height: 90%;
+    background: var(--navBlue-700);
+    box-shadow: 0.312rem 0 0.125rem var(--blue-800);
+    color: var(--white);
+}
+
+header .song_side {
+    width: 75%;
+    background: var(--navBlue-800);
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+header .master_play {
+    width: 100%;
+    height: 10%;
+    background: var(--navBlue-900);
+    box-shadow: 0 0.187rem 0.5rem var(--blue-800);
+}

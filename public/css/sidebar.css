@@ -1,0 +1,111 @@
+header .menu_side h1 {
+    font-size: 1.25rem;
+    margin: 0.93rem 0 0 1.25rem;
+    font-weight: 500;
+}
+
+header .menu_side .playlist {
+    margin: 2.5rem 0 0 1.25rem;
+}
+
+header .menu_side .playlist h4 {
+    font-size: 0.93rem;
+    font-weight: 400;
+    padding-bottom: 10;
+    color: var(--gray-300);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: .3s linear;
+}
+
+header .menu_side .playlist h4:hover {
+    color: var(--white);
+}
+
+header .menu_side .playlist h4 span {
+    position: relative;
+    margin-right: 2.18rem;
+}
+
+header .menu_side .playlist h4 span::before {
+    content: '';
+    position: absolute;
+    width: 0.25rem;
+    height: 0.25rem;
+    border: 0.125rem solid var(--gray-300);
+    border-radius: 50%;
+    top: -0.25rem;
+    transition: .3s linear;
+}
+
+header .menu_side .playlist h4:hover span::before {
+    border: 0.125rem solid var(--white);
+}
+
+header .menu_side .playlist h4 .bi {
+    display: none;
+}
+
+header .menu_side .playlist .active {
+    color: var(--lighBlue-500);
+}
+
+header .menu_side .playlist .active span {
+    display: none;
+}
+
+header .menu_side .playlist .active .bi {
+    display: flex;
+    margin-right: 1.25rem;
+}
+
+header .menu_side .menu_song {
+    width: 100%;
+    height: 18.8rem;
+    margin-top: 2.5rem;
+}
+
+header .menu_side .menu_song li {
+    position: relative;
+    list-style-type: none;
+    padding: 0.312rem 0 0.312rem 1.25rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.62rem;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+header .menu_side .menu_song li:hover {
+    background: var(--transition-100);
+}
+
+header .menu_side .menu_song li span {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--gray-300);
+}
+
+header .menu_side .menu_song li img {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1.56rem;
+}
+
+header .menu_side .menu_song li h5 {
+    font-size: 0.68rem;
+    margin-left: 0.93rem;
+}
+
+header .menu_side .menu_song li h5 .subtitle {
+    font-size: 0.56rem;
+    color: var(--gray-300);
+}
+
+header .menu_side .menu_song li .bi {
+    position: absolute;
+    right: 0.93rem;
+    top: 0.5rem;
+    font-size: 1.2rem;
+}
