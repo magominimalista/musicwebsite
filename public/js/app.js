@@ -36,7 +36,7 @@ let title = document.getElementById('title');
 
 Array.from(document.getElementsByClassName('playListPlay')).forEach((element) => {
     element.addEventListener('click', (e) => {
-        index = e.target.id;
+        index = parseInt(e.target.id);
         makeAllPlays();
         e.target.classList.remove('bi-play-circle-fill');
         e.target.classList.add('bi-pause-circle-fill');
@@ -63,7 +63,7 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((element) =>
         })
 
         makeAllBackgrounds();
-        Array.from(document.getElementsByClassName('songItem'))[`${index-1}`].style.background = "rgb(105, 105, 170, .1)";
+        Array.from(document.getElementsByClassName('songItem'))[`${index}`].style.background = "rgb(105, 105, 170, .1)";
     })
 })
 
@@ -162,7 +162,7 @@ back.addEventListener('click', () => {
     document.getElementById(`${index}`).classList.remove('bi-play-fill');
     document.getElementById(`${index}`).classList.add('bi-pause-fill');
     makeAllBackgrounds()
-    Array.from(document.getElementsByClassName('songItem'))[`${index-1}`].style.background = "rgb(105, 105, 170, .1)";
+    Array.from(document.getElementsByClassName('songItem'))[`${index}`].style.background = "rgb(105, 105, 170, .1)";
 })
 
 next.addEventListener('click', () => {
@@ -187,7 +187,7 @@ next.addEventListener('click', () => {
     document.getElementById(`${index}`).classList.remove('bi-play-fill');
     document.getElementById(`${index}`).classList.add('bi-pause-fill');
     makeAllBackgrounds()
-    Array.from(document.getElementsByClassName('songItem'))[`${index-1}`].style.background = "rgb(105, 105, 170, .1)";
+    Array.from(document.getElementsByClassName('songItem'))[`${index}`].style.background = "rgb(105, 105, 170, .1)";
 })
 
 let left_scroll = document.getElementById('left_scroll');
@@ -360,17 +360,17 @@ const songs = [
     },
     {
         id:'22',
-        songName:`Song Machine <br>
+        songName:`Aries <br>
         <div class="subtitle">Gorillaz
         </div>`,
         poster: "public/img/playlist/22.jpg"
     },
     {
         id:'23',
-        songName:`On My Way <br>
-        <div class="subtitle">Alan Walker</div>`,
+        songName:`Have Mercy <br>
+        <div class="subtitle">Chloe</div>`,
         poster: "public/img/playlist/23.jpg"
-    },
+    }
 ]
 
 Array.from(document.getElementsByClassName('songItem')).forEach((element, i)=> {
