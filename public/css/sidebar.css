@@ -62,8 +62,10 @@ header .menu_side .playlist .active .bi {
 
 header .menu_side .menu_song {
     width: 100%;
-    height: 18.8rem;
+    height: 70%;
     margin-top: 2.5rem;
+    overflow-y: auto;
+    scroll-behavior: smooth;
 }
 
 header .menu_side .menu_song li {

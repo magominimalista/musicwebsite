@@ -19,7 +19,7 @@ header .master_play .wave .wave1 {
     margin-right: 0.18rem;
     border-radius:  10 10 0 0;
     background: var(--lighBlue-500);
-    animation: wave .5s linear infinite;
+    animation: unset;
 }
 
 header .master_play .wave .wave1:nth-child(2) {
@@ -63,7 +63,7 @@ header .master_play img {
 }
 
 header .master_play h5 {
-    width: 8.12rem;
+    width: 10rem;
     font-size: 0.81rem;
     margin-left: 0.93rem;
     color: var(--white);
@@ -78,7 +78,7 @@ header .master_play h5 .subtitle {
 header .master_play .icon {
     font-size: 1.25rem;
     color: var(--white);
-    margin: 0 20 0 40;
+    margin: 0 20px 0 40px;
 }
 
 header .master_play .icon .bi {
