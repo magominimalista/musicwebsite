@@ -2,8 +2,8 @@ header .song_side .popular_artists {
     width: 90%;
     height: auto;
     margin: auto;
-    margin-top: 15px;
-    margin-bottom: 35px;
+    margin-top: 0.93rem;
+    margin-bottom: 2.18rem;
 }
 
 header .song_side .popular_artists .h4 {
@@ -25,7 +25,7 @@ header .song_side .popular_artists .h4 .bi:hover {
 header .song_side .popular_artists .item {
     width: 100%;
     height: auto;
-    margin-top: 10px;
+    margin-top: 0.625rem;
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
@@ -39,11 +39,11 @@ header .song_side .popular_artists .item::-webkit-scrollbar {
 header .song_side .popular_artists .item li {
     list-style-type: none;
     position: relative;
-    min-width: 60px;
-    height: 60px;
+    min-width: 3.75rem;
+    height: 3.75rem;
     background: var(--white);
     border-radius: 50%;
-    margin-right: 20px;
+    margin-right: 1.25rem;
     cursor: pointer;
 }
 

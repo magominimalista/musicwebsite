@@ -1,31 +1,31 @@
 header .song_side .content {
     width: 90%;
-    margin: 20px auto 40px auto;
+    margin: 1.25rem auto 2.5rem auto;
 }
 
 header .song_side .content h1 {
-    font-size: 25px;
+    font-size: 1.56rem;
     font-weight: 600;
 }
 
 header .song_side .content p {
-    font-size: 11px;
+    font-size: 0.68rem;
     font-weight: 400;
     color: var(--gray-300);
-    margin: 5px;
+    margin: 0.31rem;
 }
 
 header .song_side .content .buttons {
-    margin-top: 15px;
+    margin-top: 0.93rem;
 }
 
 header .song_side .content .buttons button {
-    width: 130px;
-    height: 30px;
-    margin-right: 10px;
+    width: 8.125rem;
+    height: 1.875rem;
+    margin-right: 0.625rem;
     border: 2px solid var(--lighBlue-500);
     outline: none;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     background: var(--lighBlue-600);
     color: var(--white);
     cursor: pointer;
