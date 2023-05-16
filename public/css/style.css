@@ -41,6 +41,7 @@ body {
     align-items: center;
     justify-content: center;
     -webkit-font-smoothing: antialiased;
+    overflow-x:hidden;
 }
 
 body, input, textarea, button {
