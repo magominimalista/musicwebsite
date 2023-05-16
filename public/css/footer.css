@@ -119,6 +119,7 @@ header .master_play .bar .bar2 {
     width: 0%;
     height: 100%;
     top: 0;
+    transition: 1s linear;
 }
 
 header .master_play .bar .dot {
@@ -188,6 +189,7 @@ header .master_play .vol .vol_bar {
     width: 0%;
     height: 100%;
     top: 0;
+    transition: 1s linear;
 }
 
 header .master_play .vol .dot {
